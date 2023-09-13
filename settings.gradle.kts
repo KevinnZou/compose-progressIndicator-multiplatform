@@ -1,7 +1,7 @@
-rootProject.name = "MyApplication"
+rootProject.name = "compose-progressIndicator-multiplatform"
 
 include(":androidApp")
-include(":shared")
+include(":progressIndicator")
 include(":desktopApp")
 
 pluginManagement {
