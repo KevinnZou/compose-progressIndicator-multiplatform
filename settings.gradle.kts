@@ -3,6 +3,7 @@ rootProject.name = "compose-progressIndicator-multiplatform"
 include(":androidApp")
 include(":progressIndicator")
 include(":desktopApp")
+includeBuild("convention-plugins")
 
 pluginManagement {
     repositories {

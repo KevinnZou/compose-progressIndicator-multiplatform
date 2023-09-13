@@ -13,3 +13,5 @@ iosApp/iosApp.xcworkspace/*
 iosApp/iosApp.xcodeproj/*
 !iosApp/iosApp.xcodeproj/project.pbxproj
 progressIndicator/progressIndicator.podspec
+/convention-plugins/
+keySec.gpg

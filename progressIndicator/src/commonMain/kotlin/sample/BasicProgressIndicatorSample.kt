@@ -2,7 +2,6 @@ package sample
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -14,11 +13,9 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.LinearProgressIndicator
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -35,7 +32,7 @@ import progressindicator.SimpleProgressIndicatorWithAnim
  * Created By Kevin Zou On 2023/9/13
  */
 @Composable
-fun BasicProgressIndicatorSample() {
+internal fun BasicProgressIndicatorSample() {
     var progress by remember { mutableStateOf(0.5f) }
     Surface(
         modifier = Modifier.fillMaxSize(),
