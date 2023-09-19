@@ -1,4 +1,12 @@
 # compose-progressIndicator-multiplatform
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.kevinnzou/compose-progressIndicator-multiplatform.svg)](https://search.maven.org/artifact/io.github.kevinnzou/compose-progressIndicator-multiplatform)
+[![Kotlin](https://img.shields.io/badge/kotlin-v1.9.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.5.1-blue)](https://github.com/JetBrains/compose-multiplatform)
+
+![badge-android](http://img.shields.io/badge/platform-android-6EDB8D.svg?style=flat)
+![badge-ios](http://img.shields.io/badge/platform-ios-CDCDCD.svg?style=flat)
+![badge-desktop](http://img.shields.io/badge/platform-desktop-DB413D.svg?style=flat)
+
 This Library is a Multiplatform version of [compose-progressIndicator](https://github.com/KevinnZou/compose-progressIndicator) which
 is designed to improve the [LinearProgressIndicator](https://foso.github.io/Jetpack-Compose-Playground/material/linearprogressindicator/) provided by Jetpack Compose. 
 Beside the base functionality provided by LinearProgressIndicator, This library supports the round corners for progressbar, thumb at the end of the bar, and the animations when progress changed. 
