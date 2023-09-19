@@ -1,4 +1,4 @@
-package progressindicator
+package com.multiplatform.progressindicator
 
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset

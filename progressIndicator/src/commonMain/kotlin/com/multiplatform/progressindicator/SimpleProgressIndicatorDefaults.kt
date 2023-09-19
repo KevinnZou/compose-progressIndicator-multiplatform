@@ -1,4 +1,4 @@
-package progressindicator
+package com.multiplatform.progressindicator
 
 import androidx.compose.animation.core.AnimationSpec
 import androidx.compose.animation.core.Spring

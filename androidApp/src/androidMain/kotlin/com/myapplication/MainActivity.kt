@@ -1,6 +1,6 @@
 package com.myapplication
 
-import MainView
+import com.multiplatform.progressindicator.MainView
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity

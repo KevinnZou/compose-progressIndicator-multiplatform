@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_VARIABLE", "OPT_IN_USAGE")
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
@@ -6,8 +8,11 @@ plugins {
 }
 
 kotlin {
-    androidTarget()
+    targetHierarchy.default()
 
+    androidTarget() {
+        publishLibraryVariants("release")
+    }
     jvm("desktop")
 
     listOf(
@@ -41,7 +46,7 @@ kotlin {
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
-        val iosMain by creating {
+        val iosMain by getting {
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
@@ -57,7 +62,7 @@ kotlin {
 
 android {
     compileSdk = (findProperty("android.compileSdk") as String).toInt()
-    namespace = "com.myapplication.common"
+    namespace = "com.multiplatform.progressIndicator"
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     sourceSets["main"].res.srcDirs("src/androidMain/res")
