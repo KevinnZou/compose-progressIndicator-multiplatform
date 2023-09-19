@@ -60,6 +60,6 @@ repositories {
 }
 
 dependencies {
-    implementation "io.github.kevinnzou:compose-progressIndicator-multiplatform:1.0.0"
+    implementation "io.github.kevinnzou:compose-progressIndicator-multiplatform:1.1.0"
 }
 ```
