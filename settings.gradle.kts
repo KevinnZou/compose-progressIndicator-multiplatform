@@ -1,8 +1,8 @@
 rootProject.name = "compose-progressIndicator-multiplatform"
 
-include(":androidApp")
+include(":sample:androidApp")
 include(":progressIndicator")
-include(":desktopApp")
+include(":sample:desktopApp")
 includeBuild("convention-plugins")
 
 pluginManagement {
@@ -40,3 +40,4 @@ dependencyResolutionManagement {
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
+include(":sample:shared")
