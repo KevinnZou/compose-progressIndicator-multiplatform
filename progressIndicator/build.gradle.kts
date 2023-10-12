@@ -4,7 +4,7 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     id("org.jetbrains.compose")
-//    id("convention.publication")
+    id("com.vanniktech.maven.publish")
 }
 
 kotlin {
@@ -76,4 +76,11 @@ android {
     kotlin {
         jvmToolchain(17)
     }
+}
+
+mavenPublishing {
+//    publishToMavenCentral(SonatypeHost.DEFAULT)
+    // or when publishing to https://s01.oss.sonatype.org
+    publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.S01, automaticRelease = true)
+    signAllPublications()
 }
